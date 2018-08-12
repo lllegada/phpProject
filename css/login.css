@@ -166,6 +166,13 @@ iframe {
   margin: 0 auto;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .container-login100 {
   width: 100%;  
   min-height: 100vh;
@@ -246,7 +253,8 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 43px 88px 93px 190px;
+  /*padding: 43px 88px 93px 190px;*/
+  padding: 8% 16%;
 }
 
 
@@ -420,6 +428,10 @@ input.input100 {
   background-color: #333333;
 }
 
+#login-btn{
+  margin-top: 8%;
+}
+
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
@@ -512,5 +524,4 @@ input.input100 {
     opacity: 1;
   }
 }
-
 
