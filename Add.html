@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./css/login.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title>Online Web Journal</title>
+</head>
+<body>
+	<div class="header">
+		<h1>Welcome <?php echo $_POST["user"];?></h1>
+	</div>
+<div class="row">
+	<div class="card">
+  		<img src="sample.png" alt="avatar" class="avatar">
+		  <h1>Jeanne Linsy</h1>
+		  <p class="title">Student, UnderGraduate</p>
+		  <p>Saint Louis University</p> 
+		  <a href="#"><i class="fa fa-twitter"></i></a> 
+		  <a href="#"><i class="fa fa-linkedin"></i></a> 
+		  <a href="#"><i class="fa fa-facebook"></i></a> 
+		  <a href="#"><p><button>Profile</button></p></a>
+	</div>
+	<div class="column_journal">
+		<div class="navbar">
+			<a href="homepage.html"><i class="fa fa-fw fa-home"></i> Home</a>
+			<a href="Add.html"><i class="fa fa-fw fa-plus"></i> Add</a>
+			<a href="#"><i class="fa fa-fw fa-image"></i> Pictures</a>
+			<a href="index.html" style="float: right;"><i class="fa fa-fw fa-close"></i> Logout</a>
+		</div>
+		<form class="add" action="Homepage.html">
+			<input type="text" name="jen" placeholder="Journal Entry no." class="en">
+			<br>
+			<textarea rows="4" cols="50" name="comment" placeholder="Enter entry here..." class="entry"></textarea>
+  			<button type="button" class="cancelbtn">Cancel</button>
+  			<button type="button"class="btn">Submit</button>
+		</form>
+	</div>
+</div>
+	<div class="footer">
+		<p> &copy; Copyright</p>
+	</div>	
+</body>
+</html>
