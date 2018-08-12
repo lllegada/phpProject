@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2018 at 01:59 PM
+-- Generation Time: Aug 12, 2018 at 06:33 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -31,8 +31,23 @@ SET time_zone = "+00:00";
 CREATE TABLE `posts` (
   `post_id` int(10) NOT NULL,
   `user_id` int(10) NOT NULL,
+  `title` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`post_id`, `user_id`, `title`, `content`) VALUES
+(1, 2, 'asdfkj;f', 'dlakfjsdlkfjaslkfjasldkfjasldkfjasldkfj;fkjwpoerueiwopeiruosidfsadf'),
+(2, 2, 'sadfsadfsadf', 'dfjasdf9w874238473euaofh'),
+(4, 2, 'sfasdfasdf', 'fuaouf98737134'),
+(5, 2, 'asfdsdf', 'sl;adjflsadf'),
+(7, 2, '32IU4PI3', 'SDKFJ;ASLDKFJASLDKFA'),
+(8, 1, 'jkfads', 'flasdj'),
+(9, 1, 'sdfasdfj30247', 'sfawk3jl343'),
+(10, 1, 'sadfasd', '');
 
 -- --------------------------------------------------------
 
@@ -80,7 +95,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `post_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
