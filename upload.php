@@ -98,16 +98,16 @@ footer {
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav mr-auto" >
 										<li class="nav-item ">
-												<a class="nav-link" href="newsfeed.html">Home </a>
+												<a class="nav-link" href="newsfeed.php">Home </a>
 										</li>
 										<li class="nav-item" active>
-												<a class="nav-link" href="upload.html">Upload <span class="sr-only">(current)</span></a>
+												<a class="nav-link" href="upload.php">Upload <span class="sr-only">(current)</span></a>
 										</li>
 										<li class="nav-item">
 												<a class="nav-link" href="#">Profile</a>
 										</li>
 										<li class="nav-item pull-right">
-												<a class="nav-link" href="#">Logout</a>
+												<a class="nav-link" href="logout.php">Logout</a>
 										</li>
 								</ul>
 						</div>
