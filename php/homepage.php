@@ -23,7 +23,7 @@
 
 	?>
 		<div class="header">
-			<h1>Welcome <?php $_SESSION["username"] ?> </h1>
+			
 		</div>
 		<div class="row">
 			<div class="card">
@@ -54,25 +54,18 @@
 				$result = mysqli_query($db_conn, $query);
 				
 				while ($row = mysqli_fetch_assoc($result)):  ?>
-				
-						<div class="row">
+						<br>
+						<div class="row" style="background-color: #F6F6F6;">
 							<div class="col-md-4">
 								<h3> <?php echo $row['title'] ?></h3>
-								<p><?php echo $row['content'] ?></p>
-								<p><?php 
+								<h5><?php 
 									$date = $row['date_posted'];
 									$split = explode(" ", $date);
 
-								echo $split[0] ?></p>
-								<di vclass="btn-group btn-group-justified" >
-									
-
-									<a href="update.php?id=<?php echo $row["post_id"] ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span> Edit </a>
-
-									<!-- Trigger the modal with a button -->
-									<button id="delBtn" type="button" class="btn btn-danger " data-toggle="modal" data-target="#deleteModal">Open Modal</button>
-
-									<!-- Modal -->
+								echo $split[0] ?></h5>
+								<p><?php echo $row['content'] ?></p>
+								
+								<!-- Modal -->
 									<div id="deleteModal" class="modal fade" role="dialog">
 									  <div class="modal-dialog">
 
@@ -92,11 +85,19 @@
 
 									  </div>
 									</div>
-									
-
-								</div>
 							</div>
+
+							<div>
+							
+							<!-- Trigger the modal with a button -->
+							<button id="delBtn" type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#deleteModal">Delete</button>
+
+							<a role="button" href="update.php?id=<?php echo $row["post_id"] ?>" class="btn btn-primary btn-lg"> Edit </a>
+
+
 						</div>
+						</div>
+
 				
 
 			<?php
