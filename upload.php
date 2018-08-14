@@ -150,12 +150,12 @@ footer {
 		<div class="card-body">
 						<img src="img/profile.jpg" style="height: 150px; width: 150px; align-content: center;" class="rounded-circle  avatar-pic">
 				
-				<div class="d-flex justify-content-center">
+				<!-- <div class="d-flex justify-content-center">
 						<div class="btn btn-mdb-color btn-rounded float-left">
 								<span>Add photo</span>
 								<input type="file">
 						</div>
-				</div>
+				</div> -->
 				<form class="add" action="" method="POST">
 					<h4 class="card-title"><label for="subject" class="">Subject</label><input type="text" id="subject" name="subject" class="form-control" required>
 															</h4>
