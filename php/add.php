@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="../css/login.css">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="../js/add.js"></script>
+<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.css">
 
 
 <head>
@@ -17,12 +19,22 @@
 <?php
 	if (isset($_SESSION["username"])) {
 		if (isset($_POST["submit"])) {
-			// if (!(empty($content) || empty($title))) {
+			$title = $_POST["title"];
+			$content = $_POST["content"];
+			
+			echo empty($content);
+			echo empty($title);
+			if (empty($content) && empty($title)) {
+				echo "Please fill both fields";
+			}
+			else{
 // =========== check if both fields are empty =====
 				$id = $_SESSION["user_id"];
-				$title = $_POST["title"];
-				$content = $_POST["content"];
+				$time = time();
+				// $date = date("Y-m-d",$t);
 
+
+				echo $time;
 
 				$query = "INSERT INTO posts (user_id, title, content) VALUES ('$id', '$title', '$content')";
 
@@ -34,7 +46,7 @@
 					echo "success";
 				}
 
-			// }
+			}
 		}
 	?>
 		<div class="header">
@@ -60,13 +72,13 @@
 				</div>
 <!-- ====================== FORM ============================== -->
 				<form class="add" action="" method="POST">
-					<input type="text" name="title" placeholder="Journal entry title" class="en">
+					<input id="title-field" type="text" name="title" placeholder="Journal entry title" class="en">
 <!-- ===== if title field is left empty display message ====== -->
 				<?php
 					if (isset($_POST["submit"])) {
 						$title = $_POST["title"];
 						if (empty($title)) {
-					?> 		<p>Please enter title</p>
+					?> 		<p style="color: red;">Please enter title</p>
 
 					<?php
 			
@@ -74,7 +86,7 @@
 					}
 					?>
 
-					<textarea rows="4" cols="50" name="content" placeholder="Enter entry here..." class="entry"></textarea>
+					<textarea rows="4" id="content-field" cols="50" name="content" placeholder="Enter entry here..." class="entry"></textarea>
 <!-- ===== if content is left empty display message ===== -->
 					<?php
 						if (isset($_POST["submit"])) {
@@ -82,7 +94,7 @@
 							if (empty($content)) {
 
 					?>
-								<p>Please enter content</p>
+								<p style="color: red;">Please enter content</p>
 					<?php	
 							}
 
@@ -90,9 +102,9 @@
 					
 
 				?>
-		  			<button type="button" class="cancelbtn" name="cancel">Cancel</button>
-		  			<!-- <button type="button" class="btn" name="submit">Submit</button> -->
-		  			<input type="submit" name="submit" value="Submit" class="btn">
+		  			
+		  			<a href="homepage.php" class="btn btn-dange" name="cancel" >Cancel</a>
+		  			<input type="submit" name="submit" value="Submit" class="btn" id="add-post">
 				</form>
 			</div>
 		</div>
