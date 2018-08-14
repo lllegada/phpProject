@@ -1,103 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Login V15</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<style type="text/css">
-		* {
-		    box-sizing: border-box;
-		}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <style type="text/css">
+      body{
+      color : black;
+      background : url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg") no-repeat center center fixed ;
+      background-size: cover;
+      font : 90% Helvetica, sans-serif, Arial;
+      }
 
+     .form-dark .font-small {
+font-size: 0.8rem; }
 
-		.fullscreen-video-wrap{
-			position: absolute;
-			margin-right: 0px;
-			margin-left: 0px;
-			overflow: hidden;
-		}
+.form-dark [type="radio"] + label,
+.form-dark [type="checkbox"] + label {
+font-size: 0.8rem; }
 
-	</style>
+.form-dark [type="checkbox"] + label:before {
+top: 2px;
+width: 15px;
+height: 15px; }
+
+.form-dark .md-form label {
+color: #fff; }
+
+.form-dark input[type=text]:focus:not([readonly]) {
+border-bottom: 1px solid #00C851;
+-webkit-box-shadow: 0 1px 0 0 #00C851;
+box-shadow: 0 1px 0 0 #00C851; }
+
+.form-dark input[type=text]:focus:not([readonly]) + label {
+color: #fff; }
+
+.form-dark input[type=password]:focus:not([readonly]) {
+border-bottom: 1px solid #00C851;
+-webkit-box-shadow: 0 1px 0 0 #00C851;
+box-shadow: 0 1px 0 0 #00C851; }
+
+.form-dark input[type=password]:focus:not([readonly]) + label {
+color: #fff; }
+
+.form-dark input[type="checkbox"] + label:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 17px;
+height: 17px;
+z-index: 0;
+border: 1.5px solid #fff;
+border-radius: 1px;
+margin-top: 2px;
+-webkit-transition: 0.2s;
+transition: 0.2s; }
+
+.form-dark input[type="checkbox"]:checked + label:before {
+top: -4px;
+left: -3px;
+width: 12px;
+height: 22px;
+border-style: solid;
+border-width: 2px;
+border-color: transparent #00c851 #00c851 transparent;
+-webkit-transform: rotate(40deg);
+-ms-transform: rotate(40deg);
+transform: rotate(40deg);
+-webkit-backface-visibility: hidden;
+-webkit-transform-origin: 100% 100%;
+-ms-transform-origin: 100% 100%;
+transform-origin: 100% 100%; }
+
+    </style>
 </head>
+
 <body>
-		<div class="fullscreen-video-wrap">
-			<video src="./images/background.mp4" autoplay="true" loop="true" height="100%" width="100%"></video>
-		</div>
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(images/cute.jpg);">
-					<span class="login100-form-title-1">
-						Welcome to Jinsy  
-					</span>
-				</div>
+	<!--Section: Live preview-->
+<section class="form-dark" style="position: relative; padding: 90px">
 
-				<form class="login100-form validate-form" action="homepage.html" method="post">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
-						<span class="focus-input100"></span>
-					</div>
+<!--Form without header-->
+<div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table7.jpg'); width: 28rem; position: absolute; left: 35%;">
+    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
-						<span class="focus-input100"></span>
-					</div>
+        <!--Header-->
+        <div class="text-center">
+            <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>SIGN</strong> <a class="green-text font-weight-bold"><strong> UP</strong></a></h3>
+        </div>
 
-					<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
-					</div>
+        <!--Body-->
+        <div class="md-form">
+            <input type="text" id="Form-email5" class="form-control white-text">
+            <label for="Form-email5">Your email</label>
+        </div>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+        <div class="md-form pb-3">
+            <input type="password" id="Form-pass5" class="form-control white-text">
+            <label for="Form-pass5">Your password</label>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+              <label class="form-check-label white-text" for="defaultCheck17">Accept the<a href="#" class="green-text font-weight-bold"> Terms and Conditions</a></label>
+            </div>
+        </div>
+
+        <!--Grid row-->
+        <div class="row d-flex align-items-center mb-4">
+
+            <!--Grid column-->
+            <div class="text-center mb-3 col-md-12">
+                <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign in</button>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+
+        <!--Grid column-->
+        <div class="col-md-12">
+            <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold"> Log in</a></p>
+        </div>
+        <!--Grid column-->
+
+    </div>
+</div>
+<!--/Form without header-->
+
+</section>
+<!--Section: Live preview-->
 	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
 </body>
+
 </html>
