@@ -27,7 +27,7 @@
 		</div>
 		<div class="row">
 			<div class="card">
-		  		<img src="../images/profile.png">
+		  		<img src="img/profile.jpg" class="avatar">
 				  <h1>Jeanne</h1>
 				  <p class="title">September 30, 1998</p>
 				  <p>Studied BSIT at Saint Louis University, Baguio City</p>  
@@ -40,8 +40,8 @@
 				<div class="navbar">
 					<a href="homepage.php"><i class="fa fa-fw fa-home"></i> Home</a>
 					<a href="add.php"><i class="fa fa-fw fa-plus"></i> Add</a>
-					<a href="#"><i class="fa fa-fw fa-image"></i> Pictures</a>
-					<a href="login.php" style="float: right;"><i class="fa fa-fw fa-close"></i> Logout</a>
+					
+					<a href="logout.php" style="float: right;"><i class="fa fa-fw fa-close"></i> Logout</a>
 				</div>
 				<!-- <p>content here...</p> -->
 				<div class="container">

@@ -54,7 +54,7 @@
 		</div>
 		<div class="row">
 			<div class="card">
-		  		<img src="../sample.png" alt="avatar" class="avatar">
+		  		<img src="img/profile.jpg" alt="avatar" class="avatar">
 				  <h1>Jeanne Linsy</h1>
 				  <p class="title">Student, UnderGraduate</p>
 				  <p>Saint Louis University</p> 
@@ -67,12 +67,16 @@
 				<div class="navbar">
 					<a href="homepage.php"><i class="fa fa-fw fa-home"></i> Home</a>
 					<a href="add.php"><i class="fa fa-fw fa-plus"></i> Add</a>
-					<a href="#"><i class="fa fa-fw fa-image"></i> Pictures</a>
+
 					<a href="logout.php" style="float: right;"><i class="fa fa-fw fa-close"></i> Logout</a>
 				</div>
 <!-- ====================== FORM ============================== -->
 				<form class="add" action="" method="POST">
+					<div>
+						
 					<input id="title-field" type="text" name="title" placeholder="Journal entry title" class="en">
+					</div>
+					<div>
 <!-- ===== if title field is left empty display message ====== -->
 				<?php
 					if (isset($_POST["submit"])) {
@@ -102,9 +106,12 @@
 					
 
 				?>
-		  			
-		  			<a href="homepage.php" class="btn btn-dange" name="cancel" >Cancel</a>
+		  			</div>
+		  			<div>
+		  				
+		  			<a href="homepage.php" class="btn btn-danger" name="cancel" >Cancel</a>
 		  			<input type="submit" name="submit" value="Submit" class="btn" id="add-post">
+		  			</div>
 				</form>
 			</div>
 		</div>

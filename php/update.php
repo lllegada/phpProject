@@ -48,8 +48,10 @@
 						
 					</div>
 					<textarea rows="4" id="content-field" cols="50" name="content" class="entry"><?php echo $row['content'] ?></textarea>
-
+					<div>
+						
 					<input type="submit" name="submit" value="Update" class="btn btn-primary" id="update-post">
+					</div>
 	</form>
 
 
