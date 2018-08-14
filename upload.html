@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <style type="text/css">
+    body{
+	    color : black;
+	    background : url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg") no-repeat center center fixed ;
+	    background-size: cover;
+	    font : 90% Helvetica, sans-serif, Arial;
+	}
+    	.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")no-repeat center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+header {
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	height:200px; 
+	right:0px;
+	overflow:hidden;
+}
+
+.content {
+	position:absolute; 
+	top:200px; 
+	bottom:200px; 
+	left:0px; 
+	right:0px; 
+	overflow:auto;
+}
+
+footer {
+	position:relative; 
+	bottom:0px; 
+	height:200px; 
+	left:0px; 
+	right:0px;
+
+}
+
+.wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+.md-form {
+  align-content: left !important;
+}
+.image--cover {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 5px;
+  object-fit: cover;
+  object-position: center ;
+}
+    </style>
+</head>
+
+<body>
+	<div class="bg"></div>
+	<html lang="en" class="full-height">
+    <nav class="navbar navbar-expand-lg navbar-dark black">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Jeanne</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link" href="newsfeed.html">Home </a>
+                    </li>
+                    <li class="nav-item" active>
+                        <a class="nav-link" href="upload.html">Upload <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item pull-right">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="content2" style="padding-left: 200px; padding-right: 200px;">
+	<div class="wrapper">     	
+    <form class="md-form" >
+      <div class="file-field">
+          <div class="mb-1">
+              <img src="img/profile.jpg" class="rounded-circle z-depth-1-half avatar-pic" width="250" height="250">
+          </div>
+          <div class="d-flex justify-content-left">
+              <div class="btn btn-mdb-color btn-rounded float-left">
+                  <span>Add photo</span>
+                  <input type="file">
+              </div>
+          </div>
+      </div>
+    </form>
+    
+   <!-- Card -->
+<div class="card">
+    <div class="card-body">
+      <!-- Section: Contact v.2 -->
+<section class="my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5">Upload Post</h2>
+  <!-- Section description -->
+  <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-9 mb-md-0 mb-5">
+
+      <form>
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="contact-name" class="form-control">
+              <label for="contact-name" class="">Your name</label>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="contact-email" class="form-control">
+              <label for="contact-email" class="">Your email</label>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="md-form mb-0">
+              <input type="text" id="contact-Subject" class="form-control">
+              <label for="contact-Subject" class="">Subject</label>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="md-form">
+              <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+              <label for="contact-message">Your message</label>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </form>
+
+      <div class="text-center text-md-left">
+        <a class="btn btn-primary btn-md">Send</a>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 text-center">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <i class="fa fa-map-marker fa-2x blue-text"></i>
+          <p>San Francisco, CA 94126, USA</p>
+        </li>
+        <li>
+          <i class="fa fa-phone fa-2x mt-4 blue-text"></i>
+          <p>+ 01 234 567 89</p>
+        </li>
+        <li>
+          <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
+          <p class="mb-0">contact@example.com</p>
+        </li>
+      </ul>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Contact v.2 -->
+      </div>
+    </div>
+    <!-- Card body -->
+
+</div>
+<!-- Card -->       
+</div>
+  
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid" alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
